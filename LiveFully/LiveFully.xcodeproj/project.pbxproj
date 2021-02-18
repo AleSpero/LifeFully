@@ -7,62 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76FAC29625DE60E8006587D1 /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FAC29525DE60E8006587D1 /* LiveFullyApp.swift */; };
-		76FAC29825DE60E8006587D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FAC29725DE60E8006587D1 /* ContentView.swift */; };
-		76FAC29A25DE60E9006587D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FAC29925DE60E9006587D1 /* Assets.xcassets */; };
-		76FAC29D25DE60E9006587D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FAC29C25DE60E9006587D1 /* Preview Assets.xcassets */; };
-		76FAC2A825DE60E9006587D1 /* LiveFullyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FAC2A725DE60E9006587D1 /* LiveFullyTests.swift */; };
-		76FAC2B325DE60E9006587D1 /* LiveFullyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FAC2B225DE60E9006587D1 /* LiveFullyUITests.swift */; };
+		76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */; };
+		76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C125DEA201003E3AFD /* Assets.xcassets */; };
+		76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */; };
+		76F0F1D025DEA201003E3AFD /* LiveFullyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1CF25DEA201003E3AFD /* LiveFullyTests.swift */; };
+		76F0F1DB25DEA201003E3AFD /* LiveFullyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1DA25DEA201003E3AFD /* LiveFullyUITests.swift */; };
+		76F0F1F225DEA243003E3AFD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1F125DEA243003E3AFD /* HomeView.swift */; };
+		76F0F1F725DEB06D003E3AFD /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1F625DEB06D003E3AFD /* CountdownView.swift */; };
+		76F0F1FD25DEB0FE003E3AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1FC25DEB0FE003E3AFD /* Card.swift */; };
+		76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F20225DEB277003E3AFD /* CountdownViewModel.swift */; };
+		76F0F20B25DEC0BB003E3AFD /* MultilineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76FAC2A425DE60E9006587D1 /* PBXContainerItemProxy */ = {
+		76F0F1CC25DEA201003E3AFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 76FAC28A25DE60E8006587D1 /* Project object */;
+			containerPortal = 76F0F1B225DEA200003E3AFD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76FAC29125DE60E8006587D1;
+			remoteGlobalIDString = 76F0F1B925DEA200003E3AFD;
 			remoteInfo = LiveFully;
 		};
-		76FAC2AF25DE60E9006587D1 /* PBXContainerItemProxy */ = {
+		76F0F1D725DEA201003E3AFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 76FAC28A25DE60E8006587D1 /* Project object */;
+			containerPortal = 76F0F1B225DEA200003E3AFD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76FAC29125DE60E8006587D1;
+			remoteGlobalIDString = 76F0F1B925DEA200003E3AFD;
 			remoteInfo = LiveFully;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76FAC29225DE60E8006587D1 /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76FAC29525DE60E8006587D1 /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
-		76FAC29725DE60E8006587D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		76FAC29925DE60E9006587D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76FAC29C25DE60E9006587D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		76FAC29E25DE60E9006587D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76FAC2A325DE60E9006587D1 /* LiveFullyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveFullyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76FAC2A725DE60E9006587D1 /* LiveFullyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyTests.swift; sourceTree = "<group>"; };
-		76FAC2A925DE60E9006587D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76FAC2AE25DE60E9006587D1 /* LiveFullyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveFullyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76FAC2B225DE60E9006587D1 /* LiveFullyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyUITests.swift; sourceTree = "<group>"; };
-		76FAC2B425DE60E9006587D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F0F1BA25DEA200003E3AFD /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
+		76F0F1C125DEA201003E3AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76F0F1C625DEA201003E3AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F0F1CB25DEA201003E3AFD /* LiveFullyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveFullyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F0F1CF25DEA201003E3AFD /* LiveFullyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyTests.swift; sourceTree = "<group>"; };
+		76F0F1D125DEA201003E3AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F0F1D625DEA201003E3AFD /* LiveFullyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveFullyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F0F1DA25DEA201003E3AFD /* LiveFullyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyUITests.swift; sourceTree = "<group>"; };
+		76F0F1DC25DEA201003E3AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F0F1F125DEA243003E3AFD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		76F0F1F625DEB06D003E3AFD /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		76F0F1FC25DEB0FE003E3AFD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		76F0F20225DEB277003E3AFD /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
+		76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76FAC28F25DE60E8006587D1 /* Frameworks */ = {
+		76F0F1B725DEA200003E3AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC2A025DE60E9006587D1 /* Frameworks */ = {
+		76F0F1C825DEA201003E3AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC2AB25DE60E9006587D1 /* Frameworks */ = {
+		76F0F1D325DEA201003E3AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,74 +80,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76FAC28925DE60E8006587D1 = {
+		76F0F1B125DEA200003E3AFD = {
 			isa = PBXGroup;
 			children = (
-				76FAC29425DE60E8006587D1 /* LiveFully */,
-				76FAC2A625DE60E9006587D1 /* LiveFullyTests */,
-				76FAC2B125DE60E9006587D1 /* LiveFullyUITests */,
-				76FAC29325DE60E8006587D1 /* Products */,
+				76F0F1BC25DEA200003E3AFD /* LiveFully */,
+				76F0F1CE25DEA201003E3AFD /* LiveFullyTests */,
+				76F0F1D925DEA201003E3AFD /* LiveFullyUITests */,
+				76F0F1BB25DEA200003E3AFD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		76FAC29325DE60E8006587D1 /* Products */ = {
+		76F0F1BB25DEA200003E3AFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76FAC29225DE60E8006587D1 /* LiveFully.app */,
-				76FAC2A325DE60E9006587D1 /* LiveFullyTests.xctest */,
-				76FAC2AE25DE60E9006587D1 /* LiveFullyUITests.xctest */,
+				76F0F1BA25DEA200003E3AFD /* LiveFully.app */,
+				76F0F1CB25DEA201003E3AFD /* LiveFullyTests.xctest */,
+				76F0F1D625DEA201003E3AFD /* LiveFullyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76FAC29425DE60E8006587D1 /* LiveFully */ = {
+		76F0F1BC25DEA200003E3AFD /* LiveFully */ = {
 			isa = PBXGroup;
 			children = (
-				76FAC29525DE60E8006587D1 /* LiveFullyApp.swift */,
-				76FAC29725DE60E8006587D1 /* ContentView.swift */,
-				76FAC29925DE60E9006587D1 /* Assets.xcassets */,
-				76FAC29E25DE60E9006587D1 /* Info.plist */,
-				76FAC29B25DE60E9006587D1 /* Preview Content */,
+				76F0F1FB25DEB0F6003E3AFD /* utils */,
+				76F0F1EC25DEA20D003E3AFD /* Onboarding */,
+				76F0F1EB25DEA208003E3AFD /* Home */,
+				76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */,
+				76F0F1C125DEA201003E3AFD /* Assets.xcassets */,
+				76F0F1C625DEA201003E3AFD /* Info.plist */,
+				76F0F1C325DEA201003E3AFD /* Preview Content */,
 			);
 			path = LiveFully;
 			sourceTree = "<group>";
 		};
-		76FAC29B25DE60E9006587D1 /* Preview Content */ = {
+		76F0F1C325DEA201003E3AFD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				76FAC29C25DE60E9006587D1 /* Preview Assets.xcassets */,
+				76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		76FAC2A625DE60E9006587D1 /* LiveFullyTests */ = {
+		76F0F1CE25DEA201003E3AFD /* LiveFullyTests */ = {
 			isa = PBXGroup;
 			children = (
-				76FAC2A725DE60E9006587D1 /* LiveFullyTests.swift */,
-				76FAC2A925DE60E9006587D1 /* Info.plist */,
+				76F0F1CF25DEA201003E3AFD /* LiveFullyTests.swift */,
+				76F0F1D125DEA201003E3AFD /* Info.plist */,
 			);
 			path = LiveFullyTests;
 			sourceTree = "<group>";
 		};
-		76FAC2B125DE60E9006587D1 /* LiveFullyUITests */ = {
+		76F0F1D925DEA201003E3AFD /* LiveFullyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				76FAC2B225DE60E9006587D1 /* LiveFullyUITests.swift */,
-				76FAC2B425DE60E9006587D1 /* Info.plist */,
+				76F0F1DA25DEA201003E3AFD /* LiveFullyUITests.swift */,
+				76F0F1DC25DEA201003E3AFD /* Info.plist */,
 			);
 			path = LiveFullyUITests;
+			sourceTree = "<group>";
+		};
+		76F0F1EB25DEA208003E3AFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				76F0F20125DEB26A003E3AFD /* viewmodel */,
+				76F0F1F125DEA243003E3AFD /* HomeView.swift */,
+				76F0F1F625DEB06D003E3AFD /* CountdownView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		76F0F1EC25DEA20D003E3AFD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		76F0F1FB25DEB0F6003E3AFD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				76F0F1FC25DEB0FE003E3AFD /* Card.swift */,
+				76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		76F0F20125DEB26A003E3AFD /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				76F0F20225DEB277003E3AFD /* CountdownViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76FAC29125DE60E8006587D1 /* LiveFully */ = {
+		76F0F1B925DEA200003E3AFD /* LiveFully */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76FAC2B725DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFully" */;
+			buildConfigurationList = 76F0F1DF25DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFully" */;
 			buildPhases = (
-				76FAC28E25DE60E8006587D1 /* Sources */,
-				76FAC28F25DE60E8006587D1 /* Frameworks */,
-				76FAC29025DE60E8006587D1 /* Resources */,
+				76F0F1B625DEA200003E3AFD /* Sources */,
+				76F0F1B725DEA200003E3AFD /* Frameworks */,
+				76F0F1B825DEA200003E3AFD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,68 +191,68 @@
 			);
 			name = LiveFully;
 			productName = LiveFully;
-			productReference = 76FAC29225DE60E8006587D1 /* LiveFully.app */;
+			productReference = 76F0F1BA25DEA200003E3AFD /* LiveFully.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76FAC2A225DE60E9006587D1 /* LiveFullyTests */ = {
+		76F0F1CA25DEA201003E3AFD /* LiveFullyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76FAC2BA25DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFullyTests" */;
+			buildConfigurationList = 76F0F1E225DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyTests" */;
 			buildPhases = (
-				76FAC29F25DE60E9006587D1 /* Sources */,
-				76FAC2A025DE60E9006587D1 /* Frameworks */,
-				76FAC2A125DE60E9006587D1 /* Resources */,
+				76F0F1C725DEA201003E3AFD /* Sources */,
+				76F0F1C825DEA201003E3AFD /* Frameworks */,
+				76F0F1C925DEA201003E3AFD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76FAC2A525DE60E9006587D1 /* PBXTargetDependency */,
+				76F0F1CD25DEA201003E3AFD /* PBXTargetDependency */,
 			);
 			name = LiveFullyTests;
 			productName = LiveFullyTests;
-			productReference = 76FAC2A325DE60E9006587D1 /* LiveFullyTests.xctest */;
+			productReference = 76F0F1CB25DEA201003E3AFD /* LiveFullyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		76FAC2AD25DE60E9006587D1 /* LiveFullyUITests */ = {
+		76F0F1D525DEA201003E3AFD /* LiveFullyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76FAC2BD25DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFullyUITests" */;
+			buildConfigurationList = 76F0F1E525DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyUITests" */;
 			buildPhases = (
-				76FAC2AA25DE60E9006587D1 /* Sources */,
-				76FAC2AB25DE60E9006587D1 /* Frameworks */,
-				76FAC2AC25DE60E9006587D1 /* Resources */,
+				76F0F1D225DEA201003E3AFD /* Sources */,
+				76F0F1D325DEA201003E3AFD /* Frameworks */,
+				76F0F1D425DEA201003E3AFD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76FAC2B025DE60E9006587D1 /* PBXTargetDependency */,
+				76F0F1D825DEA201003E3AFD /* PBXTargetDependency */,
 			);
 			name = LiveFullyUITests;
 			productName = LiveFullyUITests;
-			productReference = 76FAC2AE25DE60E9006587D1 /* LiveFullyUITests.xctest */;
+			productReference = 76F0F1D625DEA201003E3AFD /* LiveFullyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		76FAC28A25DE60E8006587D1 /* Project object */ = {
+		76F0F1B225DEA200003E3AFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					76FAC29125DE60E8006587D1 = {
+					76F0F1B925DEA200003E3AFD = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					76FAC2A225DE60E9006587D1 = {
+					76F0F1CA25DEA201003E3AFD = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 76FAC29125DE60E8006587D1;
+						TestTargetID = 76F0F1B925DEA200003E3AFD;
 					};
-					76FAC2AD25DE60E9006587D1 = {
+					76F0F1D525DEA201003E3AFD = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 76FAC29125DE60E8006587D1;
+						TestTargetID = 76F0F1B925DEA200003E3AFD;
 					};
 				};
 			};
-			buildConfigurationList = 76FAC28D25DE60E8006587D1 /* Build configuration list for PBXProject "LiveFully" */;
+			buildConfigurationList = 76F0F1B525DEA200003E3AFD /* Build configuration list for PBXProject "LiveFully" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +260,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 76FAC28925DE60E8006587D1;
-			productRefGroup = 76FAC29325DE60E8006587D1 /* Products */;
+			mainGroup = 76F0F1B125DEA200003E3AFD;
+			productRefGroup = 76F0F1BB25DEA200003E3AFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76FAC29125DE60E8006587D1 /* LiveFully */,
-				76FAC2A225DE60E9006587D1 /* LiveFullyTests */,
-				76FAC2AD25DE60E9006587D1 /* LiveFullyUITests */,
+				76F0F1B925DEA200003E3AFD /* LiveFully */,
+				76F0F1CA25DEA201003E3AFD /* LiveFullyTests */,
+				76F0F1D525DEA201003E3AFD /* LiveFullyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		76FAC29025DE60E8006587D1 /* Resources */ = {
+		76F0F1B825DEA200003E3AFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FAC29D25DE60E9006587D1 /* Preview Assets.xcassets in Resources */,
-				76FAC29A25DE60E9006587D1 /* Assets.xcassets in Resources */,
+				76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */,
+				76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC2A125DE60E9006587D1 /* Resources */ = {
+		76F0F1C925DEA201003E3AFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC2AC25DE60E9006587D1 /* Resources */ = {
+		76F0F1D425DEA201003E3AFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,48 +299,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76FAC28E25DE60E8006587D1 /* Sources */ = {
+		76F0F1B625DEA200003E3AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FAC29825DE60E8006587D1 /* ContentView.swift in Sources */,
-				76FAC29625DE60E8006587D1 /* LiveFullyApp.swift in Sources */,
+				76F0F1F725DEB06D003E3AFD /* CountdownView.swift in Sources */,
+				76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */,
+				76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */,
+				76F0F1F225DEA243003E3AFD /* HomeView.swift in Sources */,
+				76F0F1FD25DEB0FE003E3AFD /* Card.swift in Sources */,
+				76F0F20B25DEC0BB003E3AFD /* MultilineComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC29F25DE60E9006587D1 /* Sources */ = {
+		76F0F1C725DEA201003E3AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FAC2A825DE60E9006587D1 /* LiveFullyTests.swift in Sources */,
+				76F0F1D025DEA201003E3AFD /* LiveFullyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76FAC2AA25DE60E9006587D1 /* Sources */ = {
+		76F0F1D225DEA201003E3AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FAC2B325DE60E9006587D1 /* LiveFullyUITests.swift in Sources */,
+				76F0F1DB25DEA201003E3AFD /* LiveFullyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		76FAC2A525DE60E9006587D1 /* PBXTargetDependency */ = {
+		76F0F1CD25DEA201003E3AFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76FAC29125DE60E8006587D1 /* LiveFully */;
-			targetProxy = 76FAC2A425DE60E9006587D1 /* PBXContainerItemProxy */;
+			target = 76F0F1B925DEA200003E3AFD /* LiveFully */;
+			targetProxy = 76F0F1CC25DEA201003E3AFD /* PBXContainerItemProxy */;
 		};
-		76FAC2B025DE60E9006587D1 /* PBXTargetDependency */ = {
+		76F0F1D825DEA201003E3AFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76FAC29125DE60E8006587D1 /* LiveFully */;
-			targetProxy = 76FAC2AF25DE60E9006587D1 /* PBXContainerItemProxy */;
+			target = 76F0F1B925DEA200003E3AFD /* LiveFully */;
+			targetProxy = 76F0F1D725DEA201003E3AFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		76FAC2B525DE60E9006587D1 /* Debug */ = {
+		76F0F1DD25DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +405,7 @@
 			};
 			name = Debug;
 		};
-		76FAC2B625DE60E9006587D1 /* Release */ = {
+		76F0F1DE25DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,7 +460,7 @@
 			};
 			name = Release;
 		};
-		76FAC2B825DE60E9006587D1 /* Debug */ = {
+		76F0F1E025DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -434,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		76FAC2B925DE60E9006587D1 /* Release */ = {
+		76F0F1E125DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -456,7 +504,7 @@
 			};
 			name = Release;
 		};
-		76FAC2BB25DE60E9006587D1 /* Debug */ = {
+		76F0F1E325DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -478,7 +526,7 @@
 			};
 			name = Debug;
 		};
-		76FAC2BC25DE60E9006587D1 /* Release */ = {
+		76F0F1E425DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -500,7 +548,7 @@
 			};
 			name = Release;
 		};
-		76FAC2BE25DE60E9006587D1 /* Debug */ = {
+		76F0F1E625DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -520,7 +568,7 @@
 			};
 			name = Debug;
 		};
-		76FAC2BF25DE60E9006587D1 /* Release */ = {
+		76F0F1E725DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,43 +591,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76FAC28D25DE60E8006587D1 /* Build configuration list for PBXProject "LiveFully" */ = {
+		76F0F1B525DEA200003E3AFD /* Build configuration list for PBXProject "LiveFully" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76FAC2B525DE60E9006587D1 /* Debug */,
-				76FAC2B625DE60E9006587D1 /* Release */,
+				76F0F1DD25DEA201003E3AFD /* Debug */,
+				76F0F1DE25DEA201003E3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76FAC2B725DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFully" */ = {
+		76F0F1DF25DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFully" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76FAC2B825DE60E9006587D1 /* Debug */,
-				76FAC2B925DE60E9006587D1 /* Release */,
+				76F0F1E025DEA201003E3AFD /* Debug */,
+				76F0F1E125DEA201003E3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76FAC2BA25DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFullyTests" */ = {
+		76F0F1E225DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76FAC2BB25DE60E9006587D1 /* Debug */,
-				76FAC2BC25DE60E9006587D1 /* Release */,
+				76F0F1E325DEA201003E3AFD /* Debug */,
+				76F0F1E425DEA201003E3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76FAC2BD25DE60E9006587D1 /* Build configuration list for PBXNativeTarget "LiveFullyUITests" */ = {
+		76F0F1E525DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76FAC2BE25DE60E9006587D1 /* Debug */,
-				76FAC2BF25DE60E9006587D1 /* Release */,
+				76F0F1E625DEA201003E3AFD /* Debug */,
+				76F0F1E725DEA201003E3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 76FAC28A25DE60E8006587D1 /* Project object */;
+	rootObject = 76F0F1B225DEA200003E3AFD /* Project object */;
 }
