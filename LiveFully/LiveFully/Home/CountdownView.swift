@@ -16,12 +16,14 @@ struct CountdownView : View{
     let lowerLabelFont = Font.system(size: 14)
     
     var body: some View{
-        VStack(alignment: .leading, spacing: 8, content: {
-            Text("You have...")
-                .font(.title2)
-                .bold()
-            Card(alignment: Alignment(horizontal: .leading, vertical: .top)){
+            Card(alignment: Alignment(horizontal: .leading, vertical: .top),
+                 backgroundColor: Color("surface"),
+                 content: {
                 VStack(alignment: .leading, spacing: 8, content: {
+                    Text("You have...")
+                        .foregroundColor(Color("primary"))
+                        .font(.title3)
+                        .bold()
                         MultiLineLabel(
                             upperTextContent: countdownViewModel.getRemainingTime(for: .second), lowerTextContent: "Seconds",
                             fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
@@ -37,13 +39,16 @@ struct CountdownView : View{
                     MultiLineLabel(
                         upperTextContent: countdownViewModel.getRemainingTime(for: .year), lowerTextContent: "Years",
                         fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
+                    Text("...until the age of 80")
+                        .fontWeight(.light)
+                        .italic()
                 })
                 .padding(24)
-            }.onReceive(timer, perform: { _ in
+            })
+            .onReceive(timer, perform: { _ in
                 self.countdownViewModel.currentDate = Date()
             })
             .padding(EdgeInsets.init(top: 4, leading: 16, bottom: 16, trailing: 16))
-        })
     }
 }
 

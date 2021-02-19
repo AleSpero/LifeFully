@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767F00F825E0258000F10D09 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F00F725E0258000F10D09 /* Colors.xcassets */; };
 		76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */; };
 		76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C125DEA201003E3AFD /* Assets.xcassets */; };
 		76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		767F00F725E0258000F10D09 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		76F0F1BA25DEA200003E3AFD /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
 		76F0F1C125DEA201003E3AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				76F0F1EB25DEA208003E3AFD /* Home */,
 				76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */,
 				76F0F1C125DEA201003E3AFD /* Assets.xcassets */,
+				767F00F725E0258000F10D09 /* Colors.xcassets */,
 				76F0F1C625DEA201003E3AFD /* Info.plist */,
 				76F0F1C325DEA201003E3AFD /* Preview Content */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767F00F825E0258000F10D09 /* Colors.xcassets in Resources */,
 				76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */,
 				76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */,
 			);

@@ -32,11 +32,11 @@ struct MultiLineLabel : View{
             Text(textContent.first ?? "")
             .font(fonts.first)
             .animation(nil)
-            .foregroundColor(textColors.first)
+            //.foregroundColor(textColors.first)
             Text(textContent.last ?? "")
               .font(fonts.last)
               .animation(nil)
-              .foregroundColor(textColors.last)
+              //.foregroundColor(textColors.last)
         })
     }
 }

@@ -12,6 +12,7 @@ struct LiveFullyApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .background(Color("background"))
         }
     }
 }
