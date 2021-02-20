@@ -36,12 +36,15 @@ struct CountdownView : View{
                         MultiLineLabel(
                             upperTextContent: countdownViewModel.getRemainingTime(for: .month), lowerTextContent: "Months",
                             fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
-                    MultiLineLabel(
-                        upperTextContent: countdownViewModel.getRemainingTime(for: .year), lowerTextContent: "Years",
-                        fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
-                    Text("...until the age of 80")
-                        .fontWeight(.light)
-                        .italic()
+                    HStack(alignment: .bottom, spacing: nil, content: {
+                        MultiLineLabel(
+                            upperTextContent: countdownViewModel.getRemainingTime(for: .year), lowerTextContent: "Years",
+                            fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
+                        Spacer()
+                        Text("...until the age of 80")
+                            .fontWeight(.light)
+                            .italic()
+                    })
                 })
                 .padding(24)
             })
