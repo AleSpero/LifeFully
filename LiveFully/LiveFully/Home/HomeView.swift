@@ -10,26 +10,35 @@ import SwiftUI
 
 struct HomeView : View{
     var body: some View{
-        NavigationView{
-            ZStack {
+        GeometryReader{ geometry in
+            NavigationView{
+                ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 8, content: {
-                    happySentenceHeader(userName: "Alessandro")
                     CountdownView(countdownViewModel: CountdownViewModel(eightyYearsDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
-                        .frame(maxHeight: 410)
+                        .frame(maxHeight: 375)
                         .padding()
                         Spacer()
                         .toolbar(content: {
                         ToolbarItem(placement: .navigationBarLeading, content: {
-                            HStack(alignment: .center, spacing: 12, content: {
-                                Text("LiveFully")
-                                    .bold()
-                                    .font(.largeTitle)
-                                    .foregroundColor(Color("text"))
-                                Image("logo")
-                                    .resizable()
-                                    .frame(width: 42, height: 45, alignment: .center)
-                            }).padding(EdgeInsets.init(top: 48, leading: 0, bottom: 0, trailing: 0))
+                            VStack(alignment: .leading, spacing: 0) {
+                                HStack {
+                                    userRegardsHeader(userName: "Alessandrooooo")
+                                }
+                                HStack(alignment: .bottom, spacing: 4, content: {
+                                    Text("Remember to... ")
+                                        .font(.caption) +
+                                    Text("LiveFully")
+                                        .fontWeight(.light)
+                                        .font(.body)
+                                        .foregroundColor(Color("text"))
+                                    Image("logo")
+                                        .resizable()
+                                        .frame(width: 20, height: 24, alignment: .center)
+                                })
+ 
+                            }
+                            .padding(EdgeInsets.init(top: 28, leading: 0, bottom: 0, trailing: 0))
                         })
                         ToolbarItem(placement: .navigationBarTrailing) {
                                 Image(systemName: "settings")
@@ -40,15 +49,16 @@ struct HomeView : View{
             }
         }
     }
+}
 
     
-    func happySentenceHeader(userName : String) -> some View{
-        Text("Hello \(userName), have a great day ❤️")
-            .font(.title3)
+    func userRegardsHeader(userName : String) -> some View{
+        Text("Hello, \(userName)")
+            .font(.title)
             .bold()
             .foregroundColor(Color("text"))
             .lineLimit(2)
-            .padding()
+            .fixedSize(horizontal: false, vertical: true)
         //Todo pick random sentences from pool
     }
 }
