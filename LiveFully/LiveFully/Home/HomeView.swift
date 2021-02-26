@@ -16,8 +16,10 @@ struct HomeView : View{
                 Color("background").edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 8, content: {
                     CountdownView(countdownViewModel: CountdownViewModel(eightyYearsDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
-                        .frame(maxHeight: 375)
+                        .frame(maxHeight: 450)
                         .padding()
+                        MotivationPhraseView()
+                            .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
                         Spacer()
                         .toolbar(content: {
                         ToolbarItem(placement: .navigationBarLeading, content: {
@@ -27,7 +29,7 @@ struct HomeView : View{
                                 }
                                 HStack(alignment: .bottom, spacing: 4, content: {
                                     Text("Remember to... ")
-                                        .font(.caption) +
+                                        .font(.subheadline) +
                                     Text("LiveFully")
                                         .fontWeight(.light)
                                         .font(.body)

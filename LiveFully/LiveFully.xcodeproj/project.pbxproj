@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7618D6C325E90E410098CDBB /* MotivationPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */; };
+		7618D72825E959910098CDBB /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618D72725E959910098CDBB /* ActionButton.swift */; };
 		767F00F825E0258000F10D09 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F00F725E0258000F10D09 /* Colors.xcassets */; };
 		76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */; };
 		76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C125DEA201003E3AFD /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationPhraseView.swift; sourceTree = "<group>"; };
+		7618D72725E959910098CDBB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		767F00F725E0258000F10D09 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		76F0F1BA25DEA200003E3AFD /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				76F0F20125DEB26A003E3AFD /* viewmodel */,
 				76F0F1F125DEA243003E3AFD /* HomeView.swift */,
 				76F0F1F625DEB06D003E3AFD /* CountdownView.swift */,
+				7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			children = (
 				76F0F1FC25DEB0FE003E3AFD /* Card.swift */,
 				76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */,
+				7618D72725E959910098CDBB /* ActionButton.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -308,11 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F0F1F725DEB06D003E3AFD /* CountdownView.swift in Sources */,
+				7618D6C325E90E410098CDBB /* MotivationPhraseView.swift in Sources */,
 				76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */,
 				76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */,
 				76F0F1F225DEA243003E3AFD /* HomeView.swift in Sources */,
 				76F0F1FD25DEB0FE003E3AFD /* Card.swift in Sources */,
 				76F0F20B25DEC0BB003E3AFD /* MultilineComponent.swift in Sources */,
+				7618D72825E959910098CDBB /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
