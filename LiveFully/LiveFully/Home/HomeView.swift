@@ -16,11 +16,10 @@ struct HomeView : View{
                 Color("background").edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 8, content: {
                     CountdownView(countdownViewModel: CountdownViewModel(eightyYearsDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
-                        .frame(maxHeight: 450)
+                        .frame(maxHeight: 370)
                         .padding()
                         MotivationPhraseView()
                             .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
-                        Spacer()
                         .toolbar(content: {
                         ToolbarItem(placement: .navigationBarLeading, content: {
                             VStack(alignment: .leading, spacing: 0) {
@@ -40,10 +39,12 @@ struct HomeView : View{
                                 })
  
                             }
-                            .padding(EdgeInsets.init(top: 28, leading: 0, bottom: 0, trailing: 0))
+                            .padding(.top, 60)
                         })
                         ToolbarItem(placement: .navigationBarTrailing) {
-                                Image(systemName: "settings")
+                                Image("gear")
+                                    .foregroundColor(Color("text"))
+                                    .padding(.top, 60)
                             }
                     })
                     

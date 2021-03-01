@@ -48,7 +48,8 @@ struct ActionButton : View{
     
     private func getTextComponent(text: String, style: ActionButtonStyle) -> some View{
         return Text(text)
-            .font(.subheadline)
+            .font(.callout)
+            .bold()
             .foregroundColor(style.textColor)
     }
 }

@@ -25,7 +25,7 @@ struct CountdownView : View{
                         .font(.title3)
                         .bold()
                         MultiLineLabel(
-                            upperTextContent: countdownViewModel.getRemainingTime(for: .nanosecond), lowerTextContent: "Seconds",
+                            upperTextContent: countdownViewModel.getRemainingTime(for: .second), lowerTextContent: "Seconds",
                             fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
                         MultiLineLabel(
                             upperTextContent: countdownViewModel.getRemainingTime(for: .minute), lowerTextContent: "Minutes",

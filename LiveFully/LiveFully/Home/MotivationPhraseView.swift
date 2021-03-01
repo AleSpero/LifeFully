@@ -10,18 +10,19 @@ import SwiftUI
 
 struct MotivationPhraseView : View{
     var body: some View{
-        VStack(alignment: .leading, spacing: 6) {
-            Image(systemName: "quote.bubble")
-                .resizable()
-                .frame(width: 24, height: 24, alignment: .center)
-                //.rotation3DEffect(
-                    //Angle(degrees: 180),
-                    //axis: (x: 0.0, y: 1.0, z: 0.0)
-//)
+        VStack(alignment: .center, spacing: 6) {
+            HStack {
+                Image(systemName: "quote.bubble")
+                    .resizable()
+                    .frame(width: 22, height: 22, alignment: .center)
+                    .padding(EdgeInsets(top: 0, leading: 8 , bottom: 0, trailing: 0))
+                Spacer()
+            }
             Text("You are yourself, and you know what? Being yourself is enough.")
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.light)
-                .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 8))
+                .lineLimit(3)
+                .padding(EdgeInsets(top: 0, leading: 2, bottom: 0, trailing: 8))
             getRefreshButton()
         }.padding()
     }
@@ -33,16 +34,16 @@ func getRefreshButton() -> some View{
                             backgroundColor: Color("primary"),
                             borderColor: Color("primary"),
                             textColor: .white,
-                            cornerRadius: 12,
-                            icon: AnyView(Image(systemName: "arrow.2.circlepath") //change this, please
+                            cornerRadius: 10,
+                            icon: AnyView(Image(systemName: "bubble.right.fill") //change this, please
                                             .resizable()
                                             .foregroundColor(.white)
-                                            .frame(width: 24, height: 20)
-                                            .padding(6)
+                                            .frame(width: 18, height: 18)
+                                            .padding(4)
                             )
                         )){
         //Refresh action here
-    }.padding(EdgeInsets(top: 12, leading: 4, bottom: 0, trailing: 4))
+    }.padding(EdgeInsets(top: 6, leading: 4, bottom: 0, trailing: 4))
 }
 
 struct MotivationPhraseView_Preview : PreviewProvider{
