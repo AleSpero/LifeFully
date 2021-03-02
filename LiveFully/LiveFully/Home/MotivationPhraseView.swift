@@ -15,7 +15,7 @@ struct MotivationPhraseView : View{
                 Image(systemName: "quote.bubble")
                     .resizable()
                     .frame(width: 22, height: 22, alignment: .center)
-                    .padding(EdgeInsets(top: 0, leading: 8 , bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 0, leading: 4 , bottom: 0, trailing: 0))
                 Spacer()
             }
             Text("You are yourself, and you know what? Being yourself is enough.")
