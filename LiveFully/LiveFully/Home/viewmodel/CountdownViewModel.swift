@@ -10,14 +10,14 @@ import Foundation
 class CountdownViewModel : ObservableObject{
     
     @Published var currentDate : Date = Date()
-    let eightyYearsDate : Date
+    let targetDate : Date
     
-    init(eightyYearsDate : Date) {
-        self.eightyYearsDate = eightyYearsDate
+    init(targetDate : Date) {
+        self.targetDate = targetDate
     }
         
     func getRemainingTime(for component: Calendar.Component) -> String{
-        let interval = Calendar.current.intervalBetweenDates(for: component, from: currentDate, to: eightyYearsDate)
+        let interval = Calendar.current.intervalBetweenDates(for: component, from: currentDate, to: targetDate)
         let rawIntegerInterval = interval.value(for: component) ?? 0
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal

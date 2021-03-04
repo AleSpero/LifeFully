@@ -9,13 +9,17 @@ import Foundation
 import SwiftUI
 
 struct HomeView : View{
+    
+    let countdownViewModel = CountdownViewModel(targetDate: LiveFullyDefaults.targetDate ?? Date())
+
+    
     var body: some View{
         GeometryReader{ geometry in
             NavigationView{
                 ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 8, content: {
-                    CountdownView(countdownViewModel: CountdownViewModel(eightyYearsDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
+                    CountdownView(countdownViewModel: countdownViewModel)
                         .frame(maxHeight: 370)
                         .padding()
                         MotivationPhraseView()
@@ -24,7 +28,7 @@ struct HomeView : View{
                         ToolbarItem(placement: .navigationBarLeading, content: {
                             VStack(alignment: .leading, spacing: 0) {
                                 HStack {
-                                    userRegardsHeader(userName: "Alessandrooooo")
+                                    userRegardsHeader(userName: LiveFullyDefaults.userName ?? "")
                                 }
                                 HStack(alignment: .bottom, spacing: 4, content: {
                                     Text("Remember to... ")
@@ -62,7 +66,7 @@ struct HomeView : View{
             .foregroundColor(Color("text"))
             .lineLimit(2)
             .fixedSize(horizontal: false, vertical: true)
-        //Todo pick random sentences from pool
+        //Todo pick random sentences from pool (quotes API!)
     }
 }
 

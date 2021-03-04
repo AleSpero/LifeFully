@@ -11,8 +11,19 @@ import SwiftUI
 struct LiveFullyApp: App {
     var body: some Scene {
         WindowGroup {
+            if isUserConfigured() {
             HomeView()
                 .background(Color("background"))
+            } else {
+                OnboardingView()
+                    .background(Color("background"))
+            }
+            
         }
     }
+    
+    func isUserConfigured() -> Bool{
+        return LiveFullyDefaults.userName != nil && LiveFullyDefaults.dateOfBirth > 0 && LiveFullyDefaults.ageGoal > 0
+    }
+    
 }

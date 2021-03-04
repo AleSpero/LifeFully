@@ -13,6 +13,7 @@ struct OnboardingView : View{
         TabView{
             WelcomeView()
             UserInfoView()
+            AgeGoalView()
         }.tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }

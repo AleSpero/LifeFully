@@ -41,7 +41,7 @@ struct CountdownView : View{
                             upperTextContent: countdownViewModel.getRemainingTime(for: .year), lowerTextContent: "Years",
                             fonts: [upperLabelFont, lowerLabelFont], verticalSpacing: -4)
                         Spacer()
-                        Text("...until the age of 80")
+                        Text("...until the age of \(LiveFullyDefaults.ageGoal)")
                             .fontWeight(.light)
                             .italic()
                     })
@@ -51,13 +51,13 @@ struct CountdownView : View{
             .onReceive(timer, perform: { _ in
                 self.countdownViewModel.currentDate = Date()
             })
-            .padding(EdgeInsets.init(top: 4, leading: 16, bottom: 16, trailing: 16))
+            .padding(EdgeInsets.init(top: 0, leading: 8, bottom: 16, trailing: 8))
     }
 }
 
 struct CountdownView_Preview : PreviewProvider{
     static var previews: some View{
-        CountdownView(countdownViewModel: CountdownViewModel(eightyYearsDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
+        CountdownView(countdownViewModel: CountdownViewModel(targetDate: Calendar.current.date(from: DateComponents(year: 2075, month: 8, day: 18))!))
             .frame(width: .infinity, height: 100, alignment: .center)
     }
 }
