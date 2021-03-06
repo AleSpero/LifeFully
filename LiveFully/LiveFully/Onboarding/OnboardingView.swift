@@ -18,28 +18,9 @@ struct OnboardingView : View{
                 AgeGoalView()
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            
-            getNextButton()
         }
     }
     
-    func getNextButton() -> some View{
-        return ActionButton(text: "Next",
-                            style: ActionButtonStyle(
-                                backgroundColor: Color("primary"),
-                                borderColor: Color("primary"),
-                                textColor: .white,
-                                cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "bubble.right.fill") //change this, please
-                                                .resizable()
-                                                .foregroundColor(.white)
-                                                .frame(width: 18, height: 18)
-                                                .padding(4)
-                                )
-                            )){
-            //Refresh action here
-        }.padding()
-    }
 }
 
 

@@ -15,7 +15,7 @@ struct LiveFullyApp: App {
             HomeView()
                 .background(Color("background"))
             } else {
-                OnboardingView()
+                WelcomeView()
                     .background(Color("background"))
             }
             
