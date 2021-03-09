@@ -41,8 +41,8 @@ struct ActionButton : View{
     
     private func styleWithIcon(text : String, style: ActionButtonStyle) -> some View{
         return HStack(alignment: .center, spacing: 6, content: {
-            style.icon!
-            getTextComponent(text: text, style: style)
+            style.iconGravity == .textStart ? style.icon! : AnyView(getTextComponent(text: text, style: style))
+            style.iconGravity == .textStart ? AnyView(getTextComponent(text: text, style: style)) : style.icon!
         })
     }
     
@@ -60,4 +60,10 @@ struct ActionButtonStyle {
     let textColor : Color
     var cornerRadius : CGFloat = 4
     let icon : AnyView?
+    var iconGravity : IconGravity = .textStart
 }
+
+enum IconGravity{
+    case textStart
+    case textEnd
+}//TODO add btnEnd and btnStart

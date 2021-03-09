@@ -22,7 +22,6 @@ struct UserInfoView : View {
             Spacer()
             getFirstNameTextField()
             getDatePicker()
-            Spacer()
             getDataDisclaimer()
             NavigationLink(destination: AgeGoalView(), isActive: $needsToGoForward){
                 getNextButton()
@@ -35,11 +34,11 @@ struct UserInfoView : View {
     
     func getDataDisclaimer() -> some View{
         VStack(alignment: .leading, spacing: 16) {
-            Text("This data is ").font(.callout) + Text("stored only on your device").font(.callout).bold() + Text(" and nowhere else.")
-            
-            Text("You can always change it in the settings, and they will be completely removed from your phone when you uninstall the app.").font(.callout)
+            getDisclaimerTop()
+            getDisclaimerBottom()
         }.padding([.leading], 8)
     }
+
     
     func getNextButton() -> some View{
         return ActionButton(text: "Next",
@@ -48,11 +47,13 @@ struct UserInfoView : View {
                                 borderColor: Color("primary"),
                                 textColor: .white,
                                 cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "chevron.right") //change this, please
+                                icon: AnyView(Image(systemName: "chevron.right")
                                                 .foregroundColor(.white)
                                                 .padding(4)
-                                )
+                                ),
+                                iconGravity: .textEnd
                             )){
+            //Save data here! create func
             self.needsToGoForward = true
         }
     }
@@ -111,6 +112,18 @@ struct UserInfoView : View {
             )
         }
         
+    }
+    
+    func getDisclaimerTop() -> some View{
+        (Text("This data is ").font(.callout) + Text("stored only on your device").font(.callout).bold() + Text(" and nowhere else."))
+            .fixedSize(horizontal: false, vertical: true)
+
+    }
+    
+    func getDisclaimerBottom() -> some View{
+        Text("You can always change it in the settings, and they will be completely removed from your phone when you uninstall the app.")
+            .font(.callout)
+            .fixedSize(horizontal: false, vertical: true)
     }
     
 }

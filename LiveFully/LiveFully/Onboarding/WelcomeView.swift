@@ -14,10 +14,11 @@ struct WelcomeView : View  {
     
     var body : some View{
     NavigationView{
-        VStack(spacing: 100) {
+        VStack(spacing: 80) {
             HStack {
                 Text("Welcome to LiveFully")
                     .font(.largeTitle)
+                    .fixedSize(horizontal: false, vertical: true)//put this as navbar title?
                 Image("logo")
                     .resizable()
                     .frame(width: 32, height: 32)
@@ -27,10 +28,12 @@ struct WelcomeView : View  {
             
             VStack(spacing: 32) {
                 Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.")
+                    .fixedSize(horizontal: false, vertical: true)
                 NavigationLink(destination: UserInfoView(), isActive: $needsToGoForward){
                  getNextButton()
                 }
-            }.padding([.bottom], 24)
+            }
+            Spacer()
         }.padding(24)
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
@@ -44,10 +47,11 @@ struct WelcomeView : View  {
                                 borderColor: Color("primary"),
                                 textColor: .white,
                                 cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "chevron.right") //change this, please
+                                icon: AnyView(Image(systemName: "chevron.right")
                                                 .foregroundColor(.white)
                                                 .padding(4)
-                                )
+                                ),
+                                iconGravity: .textEnd
                             )){
             self.needsToGoForward = true
         }
