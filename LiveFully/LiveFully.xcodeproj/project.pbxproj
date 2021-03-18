@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		7618D6C325E90E410098CDBB /* MotivationPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */; };
 		7618D72825E959910098CDBB /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618D72725E959910098CDBB /* ActionButton.swift */; };
-		7619948925EEA220003F340F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7619948825EEA220003F340F /* OnboardingView.swift */; };
 		7619948E25EEA2E3003F340F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7619948D25EEA2E3003F340F /* WelcomeView.swift */; };
 		7619949925EEAAEC003F340F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7619949825EEAAEC003F340F /* UserInfoView.swift */; };
 		7636021625F140D0007CF72F /* LiveFullyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636021525F140CF007CF72F /* LiveFullyDefaults.swift */; };
 		7636021E25F151DA007CF72F /* AgeGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636021D25F151DA007CF72F /* AgeGoalView.swift */; };
 		767F00F825E0258000F10D09 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F00F725E0258000F10D09 /* Colors.xcassets */; };
+		76986F482603B33500F4385F /* AgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76986F472603B33500F4385F /* AgeCard.swift */; };
 		76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */; };
 		76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C125DEA201003E3AFD /* Assets.xcassets */; };
 		76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */; };
@@ -47,12 +47,12 @@
 /* Begin PBXFileReference section */
 		7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationPhraseView.swift; sourceTree = "<group>"; };
 		7618D72725E959910098CDBB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		7619948825EEA220003F340F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7619948D25EEA2E3003F340F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7619949825EEAAEC003F340F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		7636021525F140CF007CF72F /* LiveFullyDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyDefaults.swift; sourceTree = "<group>"; };
 		7636021D25F151DA007CF72F /* AgeGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGoalView.swift; sourceTree = "<group>"; };
 		767F00F725E0258000F10D09 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		76986F472603B33500F4385F /* AgeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCard.swift; sourceTree = "<group>"; };
 		76F0F1BA25DEA200003E3AFD /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
 		76F0F1C125DEA201003E3AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,10 +180,10 @@
 		76F0F1EC25DEA20D003E3AFD /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				7619948825EEA220003F340F /* OnboardingView.swift */,
 				7636021D25F151DA007CF72F /* AgeGoalView.swift */,
 				7619948D25EEA2E3003F340F /* WelcomeView.swift */,
 				7619949825EEAAEC003F340F /* UserInfoView.swift */,
+				76986F472603B33500F4385F /* AgeCard.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -339,7 +339,6 @@
 				76F0F1F725DEB06D003E3AFD /* CountdownView.swift in Sources */,
 				7618D6C325E90E410098CDBB /* MotivationPhraseView.swift in Sources */,
 				76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */,
-				7619948925EEA220003F340F /* OnboardingView.swift in Sources */,
 				76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */,
 				7619948E25EEA2E3003F340F /* WelcomeView.swift in Sources */,
 				76F0F1F225DEA243003E3AFD /* HomeView.swift in Sources */,
@@ -348,6 +347,7 @@
 				7619949925EEAAEC003F340F /* UserInfoView.swift in Sources */,
 				7636021E25F151DA007CF72F /* AgeGoalView.swift in Sources */,
 				7636021625F140D0007CF72F /* LiveFullyDefaults.swift in Sources */,
+				76986F482603B33500F4385F /* AgeCard.swift in Sources */,
 				7618D72825E959910098CDBB /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

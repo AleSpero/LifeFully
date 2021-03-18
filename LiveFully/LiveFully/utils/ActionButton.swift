@@ -12,14 +12,15 @@ import SwiftUI
 struct ActionButton : View{
     let text : String
     let style: ActionButtonStyle
+    let status : ActionButtonStatus //todo disable btn class
     let action : (() -> Void)
     
     var body : some View{
-        Button(action: action, label: {
+        Button(action: status == .enabled ? action : {}, label: {
             styleButton(text: text, style: style)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .padding(12)
-                .background(style.backgroundColor)
+                .background(status == .enabled ? style.backgroundColor : .gray) //todo custom color
                 .overlay(
                     RoundedRectangle(cornerRadius: style.cornerRadius)
                     .stroke(style.borderColor, lineWidth: 2)
@@ -67,3 +68,8 @@ enum IconGravity{
     case textStart
     case textEnd
 }//TODO add btnEnd and btnStart
+
+enum ActionButtonStatus{
+    case enabled
+    case disabled
+}

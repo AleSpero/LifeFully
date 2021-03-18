@@ -41,7 +41,7 @@ func getRefreshButton() -> some View{
                                             .frame(width: 18, height: 18)
                                             .padding(4)
                             )
-                        )){
+                        ), status: .enabled){
         //Refresh action here
     }.padding(EdgeInsets(top: 6, leading: 4, bottom: 0, trailing: 4))
 }

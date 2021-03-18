@@ -52,7 +52,7 @@ struct WelcomeView : View  {
                                                 .padding(4)
                                 ),
                                 iconGravity: .textEnd
-                            )){
+                            ), status: .enabled){
             self.needsToGoForward = true
         }
     }

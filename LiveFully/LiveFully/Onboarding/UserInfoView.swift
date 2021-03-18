@@ -16,6 +16,7 @@ struct UserInfoView : View {
     @State var birthDate : Date = Calendar.current.date(from: DateComponents(year: 2000, month: 1, day: 1))!
     
     @State var firstName : String = ""
+    @State var textValidationFailed = false
     
     var body : some View{
         VStack(alignment: .leading, spacing: 32) {
@@ -52,9 +53,11 @@ struct UserInfoView : View {
                                                 .padding(4)
                                 ),
                                 iconGravity: .textEnd
-                            )){
+                            ), status: firstName.isEmpty ? .disabled : .enabled){
             //Save data here! create func
-            self.needsToGoForward = true
+            //check if name not empty
+            self.needsToGoForward = !firstName.isEmpty
+            self.textValidationFailed = firstName.isEmpty
         }
     }
     
@@ -102,13 +105,13 @@ struct UserInfoView : View {
             Text("My First name is...")
                 .italic()
                 .font(.callout)
-                .foregroundColor(Color("primary"))
+                .foregroundColor(textValidationFailed ? .red : Color("primary"))
                 .padding([.leading], 4)
             TextField("Your first name", text: $firstName)
                 .font(.callout)
                 .padding()
                 .overlay(
-                    RoundedRectangle(cornerRadius: 8).stroke(Color("primary"), lineWidth: 2)
+                    RoundedRectangle(cornerRadius: 8).stroke(textValidationFailed ? .red : Color("primary"), lineWidth: 2)
             )
         }
         
