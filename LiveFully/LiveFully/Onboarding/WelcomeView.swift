@@ -41,20 +41,17 @@ struct WelcomeView : View  {
     }
     
     func getNextButton() -> some View{
-        return ActionButton(text: "Next",
-                            style: ActionButtonStyle(
-                                backgroundColor: Color("primary"),
-                                borderColor: Color("primary"),
-                                textColor: .white,
-                                cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "chevron.right")
-                                                .foregroundColor(.white)
-                                                .padding(4)
-                                ),
-                                iconGravity: .textEnd
-                            ), status: .enabled){
-            self.needsToGoForward = true
-        }
+        return Button(action: { self.needsToGoForward = true },
+                      label: {
+                        HStack{
+                            Spacer()
+                            Text("Next")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.white)
+                        }
+                      })
+            .buttonStyle(FilledButtonStyle())
     }
 }
 

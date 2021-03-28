@@ -29,21 +29,16 @@ struct MotivationPhraseView : View{
 }
 
 func getRefreshButton() -> some View{
-    return ActionButton(text: "Get another one",
-                        style: ActionButtonStyle(
-                            backgroundColor: Color("primary"),
-                            borderColor: Color("primary"),
-                            textColor: .white,
-                            cornerRadius: 10,
-                            icon: AnyView(Image(systemName: "bubble.right.fill") //change this, please
-                                            .resizable()
-                                            .foregroundColor(.white)
-                                            .frame(width: 18, height: 18)
-                                            .padding(4)
-                            )
-                        ), status: .enabled){
-        //Refresh action here
-    }.padding(EdgeInsets(top: 6, leading: 4, bottom: 0, trailing: 4))
+    return Button(action: {}, label: {
+        HStack {
+            Image(systemName: "bubble.right.fill") //change this, please
+                            .resizable()
+                            .foregroundColor(.white)
+                            .frame(width: 18, height: 18)
+            Text("Get another one")
+        }
+    }).buttonStyle(FilledButtonStyle())
+    .padding(EdgeInsets(top: 6, leading: 4, bottom: 0, trailing: 4))
 }
 
 struct MotivationPhraseView_Preview : PreviewProvider{

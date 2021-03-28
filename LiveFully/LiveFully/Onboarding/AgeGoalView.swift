@@ -20,7 +20,8 @@ struct AgeGoalView : View {
             Spacer()
             NavigationLink(destination: HomeView()){
                 getNextButton()
-            }
+            }.disabled(currentlySelected < 0)
+
         }
         .padding(24)
         .navigationTitle("Your Age Goal")
@@ -45,21 +46,18 @@ struct AgeGoalView : View {
     }
     
     func getNextButton() -> some View{
-        return ActionButton(text: "Next",
-                            style: ActionButtonStyle(
-                                backgroundColor: Color("primary"),
-                                borderColor: Color("primary"),
-                                textColor: .white,
-                                cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "chevron.right")
-                                                .foregroundColor(.white)
-                                                .padding(4)
-                                ),
-                                iconGravity: .textEnd
-                            ), status: currentlySelected != -1 ? ActionButtonStatus.enabled : ActionButtonStatus.disabled,
-                            action: {
-                //let's goooo
-        })
+        return Button(action: { },
+                      label: {
+                        HStack{
+                            Spacer()
+                            Text("Next")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.white)
+                        }
+                      })
+            .buttonStyle(FilledButtonStyle())
+            .disabled(currentlySelected < 0)
     }
 }
 

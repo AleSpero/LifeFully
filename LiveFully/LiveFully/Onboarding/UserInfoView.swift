@@ -26,7 +26,7 @@ struct UserInfoView : View {
             getDataDisclaimer()
             NavigationLink(destination: AgeGoalView(), isActive: $needsToGoForward){
                 getNextButton()
-            }
+            }.disabled(firstName.isEmpty)
         }
         .padding(24)
         .navigationTitle("Something about you")
@@ -42,23 +42,21 @@ struct UserInfoView : View {
 
     
     func getNextButton() -> some View{
-        return ActionButton(text: "Next",
-                            style: ActionButtonStyle(
-                                backgroundColor: Color("primary"),
-                                borderColor: Color("primary"),
-                                textColor: .white,
-                                cornerRadius: 10,
-                                icon: AnyView(Image(systemName: "chevron.right")
-                                                .foregroundColor(.white)
-                                                .padding(4)
-                                ),
-                                iconGravity: .textEnd
-                            ), status: firstName.isEmpty ? .disabled : .enabled){
+        return Button(action: {
             //Save data here! create func
             //check if name not empty
-            self.needsToGoForward = !firstName.isEmpty
-            self.textValidationFailed = firstName.isEmpty
-        }
+            self.needsToGoForward = true
+        }, label: {
+            HStack{
+                Spacer()
+                Text("Next")
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.white)
+            }
+        })
+        .disabled(firstName.isEmpty)
+        .buttonStyle(FilledButtonStyle())
     }
     
     func getDatePicker() -> some View{
