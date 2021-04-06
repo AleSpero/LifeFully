@@ -17,7 +17,6 @@ struct CountdownView : View{
     
     var body: some View{
             Card(alignment: Alignment(horizontal: .leading, vertical: .top),
-                 backgroundColor: Color("surface"),
                  content: {
                 VStack(alignment: .leading, spacing: 8, content: {
                     Text("You have...")

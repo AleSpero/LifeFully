@@ -17,8 +17,7 @@ struct HomeView : View{
         GeometryReader{ geometry in
             NavigationView{
                 ZStack {
-                Color("background").edgesIgnoringSafeArea(.all)
-                VStack(alignment: .center, spacing: 8, content: {
+                VStack(alignment: .center, spacing: 16, content: {
                     CountdownView(countdownViewModel: countdownViewModel)
                         .frame(maxHeight: 370)
                         .padding()
@@ -43,12 +42,12 @@ struct HomeView : View{
                                 })
  
                             }
-                            .padding(.top, 60)
+                            .padding(.top, 90)
                         })
                         ToolbarItem(placement: .navigationBarTrailing) {
                                 Image("gear")
                                     .foregroundColor(Color("text"))
-                                    .padding(.top, 60)
+                                    .padding(.top, 90)
                             }
                     })
                     

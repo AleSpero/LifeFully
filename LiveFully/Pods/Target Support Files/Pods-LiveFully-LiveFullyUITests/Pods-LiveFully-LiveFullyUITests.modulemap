@@ -1,0 +1,6 @@
+framework module Pods_LiveFully_LiveFullyUITests {
+  umbrella header "Pods-LiveFully-LiveFullyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

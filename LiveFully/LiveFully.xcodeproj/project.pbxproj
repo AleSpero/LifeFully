@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		767DF16726109CE000B7E081 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DF16626109CE000B7E081 /* AppTheme.swift */; };
 		767F00F825E0258000F10D09 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F00F725E0258000F10D09 /* Colors.xcassets */; };
 		76986F482603B33500F4385F /* AgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76986F472603B33500F4385F /* AgeCard.swift */; };
+		76BD944A261B285D0000B6F0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD9449261B285D0000B6F0 /* Quote.swift */; };
+		76BD9452261B291E0000B6F0 /* QuotesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD9451261B291E0000B6F0 /* QuotesResponse.swift */; };
+		76BD9457261B29820000B6F0 /* QuoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD9456261B29820000B6F0 /* QuoteAPI.swift */; };
 		76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */; };
 		76F0F1C225DEA201003E3AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C125DEA201003E3AFD /* Assets.xcassets */; };
 		76F0F1C525DEA201003E3AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F0F1C425DEA201003E3AFD /* Preview Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		76F0F1FD25DEB0FE003E3AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F1FC25DEB0FE003E3AFD /* Card.swift */; };
 		76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F20225DEB277003E3AFD /* CountdownViewModel.swift */; };
 		76F0F20B25DEC0BB003E3AFD /* MultilineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */; };
+		7E716A0FA0071034FC7D9D36 /* Pods_LiveFullyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA33ACD88CFAF8990BCB7353 /* Pods_LiveFullyTests.framework */; };
+		7F2CD31F614001343C4405D8 /* Pods_LiveFully.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AAABBD32F7AD054A6C1490 /* Pods_LiveFully.framework */; };
+		FB190230A2341E032C2BA1F5 /* Pods_LiveFully_LiveFullyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2216800DC45F4108471556B /* Pods_LiveFully_LiveFullyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25AAABBD32F7AD054A6C1490 /* Pods_LiveFully.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveFully.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB0BD8E5276191B278F529C /* Pods-LiveFully.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFully.debug.xcconfig"; path = "Target Support Files/Pods-LiveFully/Pods-LiveFully.debug.xcconfig"; sourceTree = "<group>"; };
+		3E875B64B0F512D25045AD47 /* Pods-LiveFully-LiveFullyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFully-LiveFullyUITests.release.xcconfig"; path = "Target Support Files/Pods-LiveFully-LiveFullyUITests/Pods-LiveFully-LiveFullyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A2B96382FB659B119D91624 /* Pods-LiveFully-LiveFullyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFully-LiveFullyUITests.debug.xcconfig"; path = "Target Support Files/Pods-LiveFully-LiveFullyUITests/Pods-LiveFully-LiveFullyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E774A550D232AA930693F98 /* Pods-LiveFullyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFullyTests.release.xcconfig"; path = "Target Support Files/Pods-LiveFullyTests/Pods-LiveFullyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7618D6C225E90E410098CDBB /* MotivationPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationPhraseView.swift; sourceTree = "<group>"; };
 		7619948D25EEA2E3003F340F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7619949825EEAAEC003F340F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
@@ -57,6 +68,9 @@
 		767DF16626109CE000B7E081 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		767F00F725E0258000F10D09 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		76986F472603B33500F4385F /* AgeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCard.swift; sourceTree = "<group>"; };
+		76BD9449261B285D0000B6F0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		76BD9451261B291E0000B6F0 /* QuotesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponse.swift; sourceTree = "<group>"; };
+		76BD9456261B29820000B6F0 /* QuoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteAPI.swift; sourceTree = "<group>"; };
 		76F0F1BA25DEA200003E3AFD /* LiveFully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F0F1BD25DEA200003E3AFD /* LiveFullyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFullyApp.swift; sourceTree = "<group>"; };
 		76F0F1C125DEA201003E3AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +87,10 @@
 		76F0F1FC25DEB0FE003E3AFD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		76F0F20225DEB277003E3AFD /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
 		76F0F20A25DEC0BB003E3AFD /* MultilineComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineComponent.swift; sourceTree = "<group>"; };
+		AA33ACD88CFAF8990BCB7353 /* Pods_LiveFullyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveFullyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2216800DC45F4108471556B /* Pods_LiveFully_LiveFullyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveFully_LiveFullyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8112493BE82653805DDAE8 /* Pods-LiveFullyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFullyTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveFullyTests/Pods-LiveFullyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F37E6BCF1034A12B914B899C /* Pods-LiveFully.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveFully.release.xcconfig"; path = "Target Support Files/Pods-LiveFully/Pods-LiveFully.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2CD31F614001343C4405D8 /* Pods_LiveFully.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E716A0FA0071034FC7D9D36 /* Pods_LiveFullyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,18 +114,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB190230A2341E032C2BA1F5 /* Pods_LiveFully_LiveFullyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A8E64F354499E579933279 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB0BD8E5276191B278F529C /* Pods-LiveFully.debug.xcconfig */,
+				F37E6BCF1034A12B914B899C /* Pods-LiveFully.release.xcconfig */,
+				5A2B96382FB659B119D91624 /* Pods-LiveFully-LiveFullyUITests.debug.xcconfig */,
+				3E875B64B0F512D25045AD47 /* Pods-LiveFully-LiveFullyUITests.release.xcconfig */,
+				CF8112493BE82653805DDAE8 /* Pods-LiveFullyTests.debug.xcconfig */,
+				6E774A550D232AA930693F98 /* Pods-LiveFullyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7636021425F140BD007CF72F /* data */ = {
 			isa = PBXGroup;
 			children = (
 				7636021525F140CF007CF72F /* LiveFullyDefaults.swift */,
+				76BD9456261B29820000B6F0 /* QuoteAPI.swift */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		76BD9448261B28510000B6F0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				76BD9449261B285D0000B6F0 /* Quote.swift */,
+				76BD9451261B291E0000B6F0 /* QuotesResponse.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		76F0F1B125DEA200003E3AFD = {
@@ -115,6 +159,8 @@
 				76F0F1CE25DEA201003E3AFD /* LiveFullyTests */,
 				76F0F1D925DEA201003E3AFD /* LiveFullyUITests */,
 				76F0F1BB25DEA200003E3AFD /* Products */,
+				59A8E64F354499E579933279 /* Pods */,
+				B0D6EFF0552384A4BD94264C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +177,7 @@
 		76F0F1BC25DEA200003E3AFD /* LiveFully */ = {
 			isa = PBXGroup;
 			children = (
+				76BD9448261B28510000B6F0 /* model */,
 				7636021425F140BD007CF72F /* data */,
 				76F0F1FB25DEB0F6003E3AFD /* utils */,
 				76F0F1EC25DEA20D003E3AFD /* Onboarding */,
@@ -212,6 +259,16 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		B0D6EFF0552384A4BD94264C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25AAABBD32F7AD054A6C1490 /* Pods_LiveFully.framework */,
+				B2216800DC45F4108471556B /* Pods_LiveFully_LiveFullyUITests.framework */,
+				AA33ACD88CFAF8990BCB7353 /* Pods_LiveFullyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F0F1DF25DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFully" */;
 			buildPhases = (
+				04FC60B64DF982F7C64CAA1B /* [CP] Check Pods Manifest.lock */,
 				76F0F1B625DEA200003E3AFD /* Sources */,
 				76F0F1B725DEA200003E3AFD /* Frameworks */,
 				76F0F1B825DEA200003E3AFD /* Resources */,
+				574B72DFDB25A9562D22C741 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F0F1E225DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyTests" */;
 			buildPhases = (
+				065437AE0A8CD96AC1D3585D /* [CP] Check Pods Manifest.lock */,
 				76F0F1C725DEA201003E3AFD /* Sources */,
 				76F0F1C825DEA201003E3AFD /* Frameworks */,
 				76F0F1C925DEA201003E3AFD /* Resources */,
@@ -254,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F0F1E525DEA201003E3AFD /* Build configuration list for PBXNativeTarget "LiveFullyUITests" */;
 			buildPhases = (
+				5298F89F5AA1C4E7CDCEE346 /* [CP] Check Pods Manifest.lock */,
 				76F0F1D225DEA201003E3AFD /* Sources */,
 				76F0F1D325DEA201003E3AFD /* Frameworks */,
 				76F0F1D425DEA201003E3AFD /* Resources */,
+				C9897206C5E3C46361D84EBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +399,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04FC60B64DF982F7C64CAA1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveFully-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		065437AE0A8CD96AC1D3585D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveFullyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5298F89F5AA1C4E7CDCEE346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveFully-LiveFullyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		574B72DFDB25A9562D22C741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveFully/Pods-LiveFully-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveFully/Pods-LiveFully-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveFully/Pods-LiveFully-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9897206C5E3C46361D84EBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveFully-LiveFullyUITests/Pods-LiveFully-LiveFullyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveFully-LiveFullyUITests/Pods-LiveFully-LiveFullyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveFully-LiveFullyUITests/Pods-LiveFully-LiveFullyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76F0F1B625DEA200003E3AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -345,7 +510,10 @@
 				76F0F1F725DEB06D003E3AFD /* CountdownView.swift in Sources */,
 				767DF15D26109C5C00B7E081 /* FilledButtonStyle.swift in Sources */,
 				7618D6C325E90E410098CDBB /* MotivationPhraseView.swift in Sources */,
+				76BD9457261B29820000B6F0 /* QuoteAPI.swift in Sources */,
 				76F0F20325DEB277003E3AFD /* CountdownViewModel.swift in Sources */,
+				76BD944A261B285D0000B6F0 /* Quote.swift in Sources */,
+				76BD9452261B291E0000B6F0 /* QuotesResponse.swift in Sources */,
 				76F0F1BE25DEA200003E3AFD /* LiveFullyApp.swift in Sources */,
 				7619948E25EEA2E3003F340F /* WelcomeView.swift in Sources */,
 				76F0F1F225DEA243003E3AFD /* HomeView.swift in Sources */,
@@ -510,6 +678,7 @@
 		};
 		76F0F1E025DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB0BD8E5276191B278F529C /* Pods-LiveFully.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +701,7 @@
 		};
 		76F0F1E125DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37E6BCF1034A12B914B899C /* Pods-LiveFully.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +724,7 @@
 		};
 		76F0F1E325DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8112493BE82653805DDAE8 /* Pods-LiveFullyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +747,7 @@
 		};
 		76F0F1E425DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E774A550D232AA930693F98 /* Pods-LiveFullyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +770,7 @@
 		};
 		76F0F1E625DEA201003E3AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2B96382FB659B119D91624 /* Pods-LiveFully-LiveFullyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +791,7 @@
 		};
 		76F0F1E725DEA201003E3AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E875B64B0F512D25045AD47 /* Pods-LiveFully-LiveFullyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

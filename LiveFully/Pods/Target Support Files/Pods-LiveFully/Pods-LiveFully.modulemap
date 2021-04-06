@@ -1,0 +1,6 @@
+framework module Pods_LiveFully {
+  umbrella header "Pods-LiveFully-umbrella.h"
+
+  export *
+  module * { export * }
+}

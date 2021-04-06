@@ -12,13 +12,14 @@ struct AgeGoalView : View {
     
     var possibleAgeGoals : [Int] = [30, 50, 80]
     @State var currentlySelected = -1
+    @State var goForward = false
     
     var body : some View{
         VStack(spacing: 32){
             Text("text, blablabla")
             ageGoalSelectionView()
             Spacer()
-            NavigationLink(destination: HomeView()){
+            NavigationLink(destination: HomeView(), isActive: $goForward){
                 getNextButton()
             }.disabled(currentlySelected < 0)
 
@@ -46,7 +47,10 @@ struct AgeGoalView : View {
     }
     
     func getNextButton() -> some View{
-        return Button(action: { },
+        return Button(action: {
+            LiveFullyDefaults.ageGoal = possibleAgeGoals[currentlySelected]
+            goForward = true
+        },
                       label: {
                         HStack{
                             Spacer()

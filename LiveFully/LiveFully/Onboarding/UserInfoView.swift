@@ -24,6 +24,7 @@ struct UserInfoView : View {
             getFirstNameTextField()
             getDatePicker()
             getDataDisclaimer()
+            Spacer()
             NavigationLink(destination: AgeGoalView(), isActive: $needsToGoForward){
                 getNextButton()
             }.disabled(firstName.isEmpty)
@@ -43,8 +44,8 @@ struct UserInfoView : View {
     
     func getNextButton() -> some View{
         return Button(action: {
-            //Save data here! create func
-            //check if name not empty
+            LiveFullyDefaults.dateOfBirth = birthDate.timeIntervalSince1970
+            LiveFullyDefaults.userName = firstName
             self.needsToGoForward = true
         }, label: {
             HStack{

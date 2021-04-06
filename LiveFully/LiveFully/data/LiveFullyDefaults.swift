@@ -19,9 +19,7 @@ struct LiveFullyDefaults{
     
     static var userName : String? {
         get{
-            nil
-            //"Alessandro"
-            // enable this:LiveFullyDefaults.instance.string(forKey: DefaultsKeys.userName.rawValue)
+            LiveFullyDefaults.instance.string(forKey: DefaultsKeys.userName.rawValue)
         }
         set(value){
             LiveFullyDefaults.instance.set(value, forKey: DefaultsKeys.userName.rawValue)
@@ -30,8 +28,7 @@ struct LiveFullyDefaults{
     
     static var dateOfBirth : Double {
         get{
-            808696800
-            //LiveFullyDefaults.instance.double(forKey: DefaultsKeys.dateOfBirth.rawValue)
+            LiveFullyDefaults.instance.double(forKey: DefaultsKeys.dateOfBirth.rawValue)
         }
         set(value){
             LiveFullyDefaults.instance.set(value, forKey: DefaultsKeys.dateOfBirth.rawValue)
@@ -40,8 +37,7 @@ struct LiveFullyDefaults{
     
     static var ageGoal : Int {
         get{
-            80
-            //LiveFullyDefaults.instance.integer(forKey: DefaultsKeys.ageGoal.rawValue)
+            LiveFullyDefaults.instance.integer(forKey: DefaultsKeys.ageGoal.rawValue)
         }
         set(value){
             LiveFullyDefaults.instance.set(value, forKey: DefaultsKeys.ageGoal.rawValue)
