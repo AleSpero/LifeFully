@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class QuotesResponse : Codable{
+    let contents : QuoteContent
+    
+    enum CodingKeys : String, CodingKey{
+        case contents
+    }
+}
+
+
+class QuoteContent : Codable {
+    let quotes : [Quote]
+    
+    enum CodingKeys : String, CodingKey{
+        case quotes
+    }
+}

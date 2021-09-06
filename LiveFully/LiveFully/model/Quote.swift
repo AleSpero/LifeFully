@@ -11,4 +11,10 @@ class Quote : Codable{
     var text : String
     var author : String
     var permalink : String
+    
+    enum CodingKeys : String, CodingKey{
+        case text = "quote"
+        case author
+        case permalink
+    }
 }
