@@ -37,7 +37,7 @@ struct WelcomeView : View  {
         }.padding(24)
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
-      }
+    }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     func getNextButton() -> some View{

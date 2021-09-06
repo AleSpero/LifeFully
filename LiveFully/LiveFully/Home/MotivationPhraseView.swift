@@ -18,11 +18,13 @@ struct MotivationPhraseView : View{
                     .padding(EdgeInsets(top: 0, leading: 4 , bottom: 0, trailing: 0))
                 Spacer()
             }
+            
             Text("You are yourself, and you know what? Being yourself is enough.")
                 .font(.title3)
                 .fontWeight(.light)
                 .lineLimit(3)
                 .padding(EdgeInsets(top: 0, leading: 2, bottom: 0, trailing: 8))
+            Spacer()
             getRefreshButton()
         }.padding()
     }
@@ -34,8 +36,9 @@ func getRefreshButton() -> some View{
             Image(systemName: "bubble.right.fill") //change this, please
                             .resizable()
                             .foregroundColor(.white)
-                            .frame(width: 18, height: 18)
+                            .frame(width: 16, height: 16)
             Text("Get another one")
+                .font(.callout)
         }
     }).buttonStyle(FilledButtonStyle())
     .padding(EdgeInsets(top: 6, leading: 4, bottom: 0, trailing: 4))
